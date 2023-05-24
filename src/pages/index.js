@@ -1,6 +1,31 @@
 import * as React from "react"
+import { useState } from "react"
+
+import Cursor from "../components/Cursor.js"
 
 const IndexPage = () => {
+  const [cursorText, setCursorText] = useState("");
+  const [cursorVariant, setCursorVariant] = useState("default");
+
+  function projectEnter(event) {
+    setCursorText("View");
+    setCursorVariant("project");
+  }
+
+  function cursorLeave(event) {
+    setCursorText("");
+    setCursorVariant("default");
+  }
+
+  function contactEnter(event) {
+    setCursorText("👋");
+    setCursorVariant("contact");
+  }
+
+  function linkEnter(event) {
+    setCursorText("");
+    setCursorVariant("link");
+  }
 
   return (
     <main>
