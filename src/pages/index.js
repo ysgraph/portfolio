@@ -1,7 +1,10 @@
 import * as React from "react"
 import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 
 import Cursor from "../components/Cursor.js"
+import ClientOnly from "../components/ClientOnly.js"
+import Navigation from "../components/Navigation.js"
 
 const IndexPage = () => {
   const [cursorText, setCursorText] = useState("");
@@ -30,6 +33,7 @@ const IndexPage = () => {
   return (
     <main>
       <div>Hello from Gatsby!</div>
+      <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
     </main>
   )
 }
