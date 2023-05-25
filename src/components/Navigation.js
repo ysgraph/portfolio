@@ -3,7 +3,7 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 import { Link } from "gatsby"
-import styles from './navigation.module.css'
+import * as styles from './navigation.module.css'
 
 import menuIcon from '../images/menu.svg'
 import closeIcon from '../images/close.svg'
