@@ -53,7 +53,7 @@ function WorkGrid(props) {
   return (
     <div className="grid">
       <div className="work-grid">
-          <FeaturedCard 
+          {/* <FeaturedCard 
             // image="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-image.png"
             image="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/featured-tile.png"
             imageAlt=""
@@ -64,7 +64,7 @@ function WorkGrid(props) {
             size="featured"
             onProjectEnter={projectEnter}
             onProjectLeave={projectLeave}
-          />
+          /> */}
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
             link="/discord-growth"
