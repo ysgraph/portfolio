@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Cursor from "../components/Cursor.js"
 import ClientOnly from "../components/ClientOnly.js"
 import Navigation from "../components/Navigation.js"
+import Hero from "../components/Hero.js"
 
 import "../components/reset.css"
 import "../components/global.css"
@@ -36,6 +37,7 @@ const IndexPage = () => {
   return (
     <main>
       <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
+      <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
     </main>
   )
 }
