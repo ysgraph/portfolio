@@ -46,7 +46,7 @@ const AboutPage = () => {
   return (
       <div>
         <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
-        <Hero text="I’m a husband, dad to three pets, and a designer who’s trying not to take himself too seriously." details={false} />
+        <Hero text="I 💜 Web Service." details={false} />
   
         <ClientOnly>
           <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
@@ -75,20 +75,16 @@ const AboutPage = () => {
         </motion.section>
         <motion.section className="grid about">
           <div className="bio">
-            <h2 className="h2">I’m currently helping to lead, mentor, and grow the team at Discord as a design manager.</h2>
+            {/* <h2 className="h2">I’m currently helping to lead, mentor, and grow the team at Discord as a design manager.</h2> */}
           </div>
           <div className="bio-body">
             <p className="paragraph paragraph--large">
-              My love for design started when I was a teenager designing merch and cd covers for local bands.
-              I pursued my passion for design by studying
-              Interactive Art and Media at Columbia College of Chicago.
+            1996年生まれ。関西学院大学法学部卒業。<br/>
+            ⼤学3年次にDTP・グラフィックを1年半経験後、Micoworks株式会社、株式会社Graciaなどで、計2年ほどtoCサービスのWebサービス改善に従事。<br/>
+            新卒で入社した合同会社DMM.comでは、DMMポイントクラブにて施策設計・UI設計・ビジュアルデザイン・コーディング等を担当。
             </p>
             <p className="paragraph paragraph--large">
-              Everyday I’m motivated by the opportunity to solve real problems for people.
-              I’m always trying to improve my craft, continue learning, and help others grow as designers.
-            </p>
-            <p className="paragraph paragraph--large">
-              When I'm not designing you'll find me writing music, playing games, or at my local coffee shop.
+                Webサービス・創作活動・ツーリング・洋服・Vtuber・ガジェットなど、さまざまなオタクをしています。
             </p>
           </div>
         </motion.section>
@@ -99,42 +95,42 @@ const AboutPage = () => {
             <ul className="list">
               <li className="list-item">
                 <h6 className="h6 timeline">
-                  2020 - Current
+                    2021 - Current
                 </h6>
                 <h4 className="h4">
-                  Product Design Manager at Discord
+                合同会社DMM.com
                 </h4>
               </li>
               <li className="list-item">
                 <h6 className="h6 timeline">
-                  2018 - 2020
+                    2021
                 </h6>
                 <h4 className="h4">
-                  Product Design at Discord
+                株式会社Enju
                 </h4>
               </li>
               <li className="list-item">
                 <h6 className="h6 timeline">
-                  2015 - 2018
+                  2020 - 2021
                 </h6>
                 <h4 className="h4">
-                  Design and Engineering at SteelSeries
+                株式会社Gracia
                 </h4>
               </li>
               <li className="list-item">
                 <h6 className="h6 timeline">
-                  2014 - 2015
+                2019 - 2020
                 </h6>
                 <h4 className="h4">
-                  Front End and UX at Palantir.net
+                Micoworks株式会社
                 </h4>
               </li>
               <li className="list-item">
                 <h6 className="h6 timeline">
-                  2010 - 2014
+                2017 - 2019
                 </h6>
                 <h4 className="h4">
-                  Freelance and Internships
+                株式会社NPCコーポレーション
                 </h4>
               </li>
             </ul>
@@ -144,34 +140,10 @@ const AboutPage = () => {
             <ul className="list">
               <li className="list-item">
                 <h6 className="h6 timeline">
-                  2021 - Medium
+                2022 - DMM Inside
                 </h6>
                 <h4 className="h4">
-                  <a href="https://medium.com/me/stats/post/c435e2f8851b">How to set up Custom Design Linting</a>
-                </h4>
-              </li>
-              <li className="list-item">
-                <h6 className="h6 timeline">
-                  2021 - Figma File
-                </h6>
-                <h4 className="h4">
-                  <a href="https://www.figma.com/community/file/942856928187155104">Intro to Figma Plugin Api</a>
-                </h4>
-              </li>
-              <li className="list-item">
-                <h6 className="h6 timeline">
-                  2020 - Medium
-                </h6>
-                <h4 className="h4">
-                  <a href="https://blog.discord.com/building-open-source-design-tools-to-improve-discords-design-workflow-9a25c29f9143">Building Open Source Plugins</a>
-                </h4>
-              </li>
-              <li className="list-item">
-                <h6 className="h6 timeline">
-                  2018 - Medium
-                </h6>
-                <h4 className="h4">
-                  <a href="https://blog.discord.com/redesigning-the-discord-overlay-cc31c6042d6d">Redesigning the Discord Overlay</a>
+                  <a href="https://inside.dmm.com/articles/generic-skills/">デザイナーの「基礎体力」について</a>
                 </h4>
               </li>
             </ul>
@@ -227,7 +199,7 @@ const AboutPage = () => {
               imageAlt="Mockup of Discord's video chat feature with a person using it"
               link="/server-video"
               color="pink"
-              title="Server Video"
+              title="TANP"
               size="normal"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}
@@ -237,7 +209,7 @@ const AboutPage = () => {
               imageAlt="Image of Discord's Onboarding Screen"
               link="/discord-growth"
               color="blue"
-              title="Discord Onboarding"
+              title="digmee"
               size="normal"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}
