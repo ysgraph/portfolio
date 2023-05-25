@@ -6,6 +6,9 @@ import Cursor from "../components/Cursor.js"
 import ClientOnly from "../components/ClientOnly.js"
 import Navigation from "../components/Navigation.js"
 
+import "../components/reset.css"
+import "../components/global.css"
+
 const IndexPage = () => {
   const [cursorText, setCursorText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -32,7 +35,6 @@ const IndexPage = () => {
 
   return (
     <main>
-      <div>Hello from Gatsby!</div>
       <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
     </main>
   )
