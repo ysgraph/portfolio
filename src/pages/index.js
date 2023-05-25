@@ -6,6 +6,7 @@ import Cursor from "../components/Cursor.js"
 import ClientOnly from "../components/ClientOnly.js"
 import Navigation from "../components/Navigation.js"
 import Hero from "../components/Hero.js"
+import WorkGrid from "../components/WorkGrid.js"
 
 import "../components/reset.css"
 import "../components/global.css"
@@ -38,6 +39,10 @@ const IndexPage = () => {
     <main>
       <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
       <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
+      <ClientOnly>
+        <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
+        <WorkGrid onProjectEnter={projectEnter} onProjectLeave={cursorLeave} />
+      </ClientOnly>
     </main>
   )
 }
