@@ -30,7 +30,7 @@ function Cursor(props) {
       }
     },
     project: {
-      opacity: 1,
+      opacity: 0,
       backgroundColor: "rgba(255, 255, 255, 0.9)",
       color: "#000",
       height: 80,
@@ -43,21 +43,6 @@ function Cursor(props) {
         mass: 0.4,
         stiffness: 130,
         duration: 0.3,
-      }
-    },
-    contact: {
-      opacity: 1,
-      backgroundColor: "rgba(255, 189, 189, 0.85)",
-      color: "#000",
-      height: 64,
-      width: 64,
-      fontSize: "32px",
-      x: mouseXPosition - 48,
-      y: mouseYPosition - 48,
-      transition: {
-        type: "spring",
-        mass: 0.4,
-        stiffness: 130,
       }
     },
     link: {
