@@ -54,7 +54,7 @@ export default IndexPage
 export const Head = () => (
   <>
     <meta charSet="utf-8" />
-    <title>Yudai Suzuki - Home</title>
+    <title>Yudai Suzuki</title>
     <meta name="description" content="The work of Daniel Destefanis, a product design manager from Chicag currently working at Discord." />
   </>
 )
