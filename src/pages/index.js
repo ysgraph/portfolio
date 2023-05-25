@@ -39,7 +39,7 @@ const IndexPage = () => {
   return (
     <main>
       <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
-      <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
+      <Hero text="Yudai Suzuki" details={true}/>
       <ClientOnly>
         <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
         <WorkGrid onProjectEnter={projectEnter} onProjectLeave={cursorLeave} />

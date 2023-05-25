@@ -56,11 +56,11 @@ function WorkGrid(props) {
           <FeaturedCard 
             // image="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-image.png"
             image="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/featured-tile.png"
-            imageAlt="Discord server video ui"
+            imageAlt=""
             link="/server-video"
             color="pink"
-            title="Server Video"
-            key="Server Video"
+            title="DMM Pointclub"
+            key="DMM Pointclub"
             size="featured"
             onProjectEnter={projectEnter}
             onProjectLeave={projectLeave}
@@ -68,9 +68,9 @@ function WorkGrid(props) {
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
             link="/discord-growth"
-            imageAlt="Phone displaying Discord Templates UI"
+            imageAlt=""
             color="blue"
-            title="Discord Growth"
+            title="TANP"
             size="normal"
             onProjectEnter={projectEnter}
             onProjectLeave={projectLeave}
@@ -78,9 +78,9 @@ function WorkGrid(props) {
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
             link="/design-tooling"
-            imageAlt="UI of Design Tooling Plugins in Figma"
+            imageAlt=""
             color="green"
-            title="Design Tooling"
+            title="digmee"
             size="normal"
             alignment="bottom"
             onProjectEnter={projectEnter}
@@ -89,8 +89,8 @@ function WorkGrid(props) {
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/destiny-medals-image.png"
             link="/destiny-medals"
-            imageAlt="Image of Destiny Medals Project"
-            title="Destiny Medals"
+            imageAlt=""
+            title="Kalta"
             color="purple"
             size="normal"
             onProjectEnter={projectEnter}
@@ -99,8 +99,8 @@ function WorkGrid(props) {
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/steelseries-image.png"
             link="/steelseries"
-            imageAlt="SteelSeries Engine UI"
-            title="SteelSeries"
+            imageAlt=""
+            title="Personal Works"
             color="yellow"
             size="normal"
             alignment="bottom"
