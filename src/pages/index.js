@@ -7,6 +7,7 @@ import ClientOnly from "../components/ClientOnly.js"
 import Navigation from "../components/Navigation.js"
 import Hero from "../components/Hero.js"
 import WorkGrid from "../components/WorkGrid.js"
+import Footer from "../components/Footer.js"
 
 import "../components/reset.css"
 import "../components/global.css"
@@ -43,6 +44,7 @@ const IndexPage = () => {
         <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
         <WorkGrid onProjectEnter={projectEnter} onProjectLeave={cursorLeave} />
       </ClientOnly>
+      <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
     </main>
   )
 }
