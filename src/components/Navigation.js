@@ -128,7 +128,7 @@ function Navigation(props) {
             transition={{ type: 'spring', delay: 0 }}
           >
             <div className={styles.logo}>
-              <Link to="/" className={styles.logo} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>Daniel Destefanis</Link>
+              <Link to="/" className={styles.logo} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>Yudai Suzuki</Link>
             </div>
             <div className={styles.navList}>
               {/* <Link to="/about" className={styles.navLink} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}><span>About</span></Link>
