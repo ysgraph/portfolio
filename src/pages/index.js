@@ -36,6 +36,30 @@ const IndexPage = () => {
     setCursorVariant("link");
   }
 
+  const duration = 0.3
+
+  const pageVariants = {
+    initial: {
+      opacity: 1,
+      y: 0,
+    },
+    enter: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: duration,
+        delay: duration,
+        when: "beforeChildren",
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -20,
+      transition: { duration: duration },
+    },
+  }
+
+
   return (
     <main>
       <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
