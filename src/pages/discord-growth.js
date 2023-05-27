@@ -98,61 +98,78 @@ const DiscordGrowth = () => {
 
         <div class="grid">
           <div className="project-intro">
-            <h1 className="project-title">Discord Growth (TANP)</h1>
+            <h1 className="project-title">TANP</h1>
             <div className="project-description">
-              <p className="paragraph--large project-lede">
-                UIモデリングに基づいた構造設計と
-                <br />
-                iOSのUIデザインの理解・実践
+              <div className="project-summary">
+                <p className="paragraph--large project-lede">
+                  UIモデリングに基づいた構造設計
+                </p>
+                <ClientOnly>
+                  <div className="detail first-detail">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.6, y: 0 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      transition={{ type: "spring", delay: 0.4, damping: 15 }}
+                      className="icon-wrapper"
+                    >
+                      <img
+                        src={clockIcon}
+                        alt="Clock Icon"
+                        className="details-icon"
+                      />
+                    </motion.div>
+                    <motion.h3
+                      className="details-label"
+                      initial={{ opacity: 0, y: 30 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ type: "spring", delay: 0.65, damping: 15 }}
+                    >
+                      8ヶ月
+                    </motion.h3>
+                  </div>
+                  <div className="detail second-detail">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.6, y: 0 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      transition={{ type: "spring", delay: 0.8, damping: 15 }}
+                      className="icon-wrapper"
+                    >
+                      <img
+                        src={calendarIcon}
+                        alt="Calendar Icon"
+                        className="details-icon"
+                      />
+                    </motion.div>
+                    <motion.h3
+                      initial={{ opacity: 0, y: 30 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ type: "spring", delay: 1, damping: 15 }}
+                      className="details-label"
+                    >
+                      2020.08 - 2021.03
+                    </motion.h3>
+                  </div>
+                </ClientOnly>
+              </div>
+            </div>
+            <div className="project-caption">
+              <p className="paragraph--small">
+                TANPは、ギフトに特化したECサービスです。
+              </p>
+              <p className="paragraph--small">
+                TANPに参画した当初、プロダクトデザイン面では以下が求められていました。<br />
+                ・基本的なECサービスとしての機能の充足<br />
+                ・ビジュアル面からのユーザーの印象の底上げ
+              </p>
+              <p className="paragraph--small">
+                私はUIデザイナーとして、新機能や施策のUIデザイン・LPデザイン・クリエイティブ制作などを担当しました。
+              </p>
+              <p className="paragraph--small">
+                本ページで開示されている全ての画像、イラスト、写真、デザイン、データなどの知的財産権・著作権は、株式会社Gracia又はコンテンツ提供者に帰属しています。
               </p>
             </div>
-            <ClientOnly>
-              <div className="detail first-detail">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.6, y: 0 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  transition={{ type: "spring", delay: 0.4, damping: 15 }}
-                  className="icon-wrapper"
-                >
-                  <img
-                    src={clockIcon}
-                    alt="Clock Icon"
-                    className="details-icon"
-                  />
-                </motion.div>
-                <motion.h3
-                  className="details-label"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ type: "spring", delay: 0.65, damping: 15 }}
-                >
-                  8ヶ月
-                </motion.h3>
-              </div>
-              <div className="detail second-detail">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.6, y: 0 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  transition={{ type: "spring", delay: 0.8, damping: 15 }}
-                  className="icon-wrapper"
-                >
-                  <img
-                    src={calendarIcon}
-                    alt="Calendar Icon"
-                    className="details-icon"
-                  />
-                </motion.div>
-                <motion.h3
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ type: "spring", delay: 1, damping: 15 }}
-                  className="details-label"
-                >
-                  2020.08 - 2021.03
-                </motion.h3>
-              </div>
-            </ClientOnly>
           </div>
+          
         </div>
 
         <div className="grid">
@@ -160,15 +177,18 @@ const DiscordGrowth = () => {
             
             <div className="body">
               <h3 className="h3 project-about">
+                <p className="caption">
+                  PROJECT 1.
+                </p>
                 記念日リマインダー機能のリニューアル
               </h3>
-              <p className="paragraph">
+              <p className="paragraph--small">
                 TANP iOSアプリの「記念日リマインダー」は、ユーザーが大切な人の記念日を登録することをきっかけとして、購入に繋げるための役割として設計された機能でした。
               </p>
-              <p className="paragraph">
+              <p className="paragraph--small">
                 しかし、従来のUIでは、カレンダー型のUIによる使いづらさが要因で、あまり使われていないという課題がありました。
               </p>
-              <p className="paragraph">
+              <p className="paragraph--small">
                 そのため、記念日を簡単に登録・確認できるようにするために、機能のリニューアルが行われました。
               </p>
               <div className="detail second-detail">
@@ -188,18 +208,40 @@ const DiscordGrowth = () => {
                   <br />
                   UIデザイナー
                 </motion.h3>
+                <motion.div className="icon-wrapper">
+                  <img
+                    src={calendarIcon}
+                    alt="Calendar Icon"
+                    className="details-icon"
+                  />
+                </motion.div>
+                <motion.h3 className="details-label">
+                  ワイヤーフレーム設計
+                  <br />
+                  UIデザインの補助
+                </motion.h3>
+                <motion.div className="icon-wrapper">
+                  <img
+                    src={calendarIcon}
+                    alt="Calendar Icon"
+                    className="details-icon"
+                  />
+                </motion.div>
+                <motion.h3 className="details-label">
+                  4時間
+                </motion.h3>
               </div>
             </div>
 
             <div className="body">
               <h2 className="h2">UIモデリングによるワイヤーフレーム設計</h2>
-              <p className="paragraph">
+              <p className="paragraph--small">
               この施策では「記念日」と「記念日の相手」という2つの概念が混乱を生んでおり、プロダクトマネージャーはワイヤーフレーム作成に苦戦していました。
               </p>
-              <p className="paragraph">
+              <p className="paragraph--small">
               そのため私は、オブジェクト指向UIのモデリング手法を用いてUI構造の整理を行うことをプロダクトマネージャーに提案し、実施しました。
               </p>
-              <p className="paragraph">
+              <p className="paragraph--small">
               ユーザーがタスクを遂行する上では、記念日が最も重要なオブジェクトであるため、
               </p>
               <ul className="case-list">
@@ -210,7 +252,7 @@ const DiscordGrowth = () => {
                   記念日の詳細を閲覧できるシングルビュー
                 </li>
               </ul>
-              <p className="paragraph">
+              <p className="paragraph--small">
                 という形でビューを設計しています。
               </p>
             </div>

@@ -7,6 +7,7 @@
   --color-white: #fff;
   --color-grey: #f9f9f9;
   --color-primary: #D8FF3D;
+  --color-bluegrey: #8E8FA5;
   
   --color-pink: hsla(0, 100%, 87%, 1);
   --color-pink-dark: hsla(2, 49%, 25%, 1);
@@ -129,7 +130,7 @@ img {
 .h3 {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .h4 {
@@ -162,6 +163,21 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;
+}
+
+.paragraph--small {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.caption {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--color-bluegrey);
+  letter-spacing: 0.1em;
 }
 
 @media screen and (min-width: 960px) {
@@ -198,6 +214,11 @@ img {
 
   .paragraph {
     font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .paragraph--small {
+    font-size: 16px;
     margin-bottom: 40px;
   }
 }
