@@ -9,7 +9,7 @@ import faceLogo from '../images/logo.svg'
 import menuIcon from "../images/menu.svg";
 import closeIcon from "../images/close.svg";
 import twitterIcon from "../images/twitter.svg";
-import linkedinIcon from "../images/linkedin.svg";
+import githubIcon from "../images/github.svg";
 
 function Navigation(props) {
   const [navOpen, setNavOpen] = useState(false);
@@ -192,7 +192,6 @@ function Navigation(props) {
               exit="exit"
             >
               <div className={styles.wrapper}>
-                <h5 class={styles.label}>Not Case Studies</h5>
                 <motion.ul variants={listVariants} className={styles.list}>
                   <motion.li variants={item}>
                     <Link
@@ -206,9 +205,10 @@ function Navigation(props) {
                     </Link>
                   </motion.li>
                 </motion.ul>
-                <h5 class={styles.label}>Case Studies</h5>
+                <h5 class={styles.label}>Works</h5>
                 <motion.ul variants={listVariants} className={styles.list}>
-                  <motion.li variants={item}>
+
+                  {/* <motion.li variants={item}>
                     <Link
                       to="/server-video"
                       className={styles.link}
@@ -216,9 +216,10 @@ function Navigation(props) {
                       onMouseLeave={mouseLeave}
                       onClick={updateNav}
                     >
-                      <span>Server Video</span>
+                      <span>DMM Pointclub</span>
                     </Link>
-                  </motion.li>
+                  </motion.li> */}
+
                   <motion.li variants={item}>
                     <Link
                       to="/discord-growth"
@@ -227,9 +228,10 @@ function Navigation(props) {
                       onMouseLeave={mouseLeave}
                       onClick={updateNav}
                     >
-                      <span>Discord Growth</span>
+                      <span>TANP</span>
                     </Link>
                   </motion.li>
+
                   <motion.li variants={item}>
                     <Link
                       to="/design-tooling"
@@ -238,9 +240,10 @@ function Navigation(props) {
                       onMouseLeave={mouseLeave}
                       onClick={updateNav}
                     >
-                      <span>Design Tooling</span>
+                      <span>digmee</span>
                     </Link>
                   </motion.li>
+                  
                   <motion.li variants={item}>
                     <Link
                       to="/destiny-medals"
@@ -249,9 +252,10 @@ function Navigation(props) {
                       onMouseLeave={mouseLeave}
                       onClick={updateNav}
                     >
-                      <span>Destiny Medals</span>
+                      <span>Kalta</span>
                     </Link>
                   </motion.li>
+                  
                   <motion.li variants={item}>
                     <Link
                       to="/steelseries"
@@ -260,23 +264,24 @@ function Navigation(props) {
                       onMouseLeave={mouseLeave}
                       onClick={updateNav}
                     >
-                      <span>SteelSeries</span>
+                      <span>Other Works</span>
                     </Link>
                   </motion.li>
+
                 </motion.ul>
-                <h5 class={styles.label}>Follow</h5>
+
                 <motion.div className={styles.socialIcons}>
                   <Link to="https://twitter.com/daniel__designs">
                     <img
                       src={twitterIcon}
-                      alt="Twitter Icon"
+                      alt="Twitterへ"
                       className={styles.social}
                     />
                   </Link>
                   <Link to="https://www.linkedin.com/in/danielrd/">
                     <img
-                      src={linkedinIcon}
-                      alt="LinkedIn Icon"
+                      src={githubIcon}
+                      alt="GitHubへ"
                       className={styles.social}
                     />
                   </Link>

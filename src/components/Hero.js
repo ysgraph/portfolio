@@ -22,6 +22,13 @@ function Hero(props) {
               >
                 {props.text}
               </motion.h1>
+              <motion.p
+                    className={styles.label}
+                    initial={{ opacity: 0, y: 150 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ type: 'spring', delay: 0.4, damping: 15 }}>
+                    Digital Product Designer
+              </motion.p>
             </ClientOnly>
           </div>
         </div>
@@ -34,7 +41,7 @@ function Hero(props) {
                   <motion.div
                     initial={{ opacity: 0, scale: 0.6, y: 0 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
-                    transition={{ type: 'spring', delay: 0.4, damping: 15 }}
+                    transition={{ type: 'spring', delay: 0.65, damping: 15 }}
                     className={styles.iconWrapper}>
                     <img src={designIcon} alt="Design Layout Icon" className={styles.detailIcon} />
                   </motion.div>
@@ -42,7 +49,7 @@ function Hero(props) {
                     className={styles.label}
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ type: 'spring', delay: 0.65, damping: 15 }}>
+                    transition={{ type: 'spring', delay: 0.85, damping: 15 }}>
                     Working at DMM.com
                   </motion.h3>
                 </div>
@@ -50,14 +57,14 @@ function Hero(props) {
                   <motion.div
                     initial={{ opacity: 0, scale: 0.6, y: 0 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
-                    transition={{ type: 'spring', delay: 0.8, damping: 15 }}
+                    transition={{ type: 'spring', delay: 1.05, damping: 15 }}
                     className={styles.iconWrapper}>
                     <img src={mapIcon} alt="Map Icon" className={styles.detailIcon} />
                   </motion.div>
                   <motion.h3
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ type: 'spring', delay: 1, damping: 15 }}
+                    transition={{ type: 'spring', delay: 1.25, damping: 15 }}
                     className={styles.label}>
                       Kanazawa, Japan
                   </motion.h3>

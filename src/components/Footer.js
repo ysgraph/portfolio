@@ -24,7 +24,7 @@ function Footer(props) {
       <div className={styles.footer}>
         <nav className={styles.footerLinks}>
           <div className={styles.openSource}>
-          © 2023️ Yudai Suzuki / Special Thanks to <a href="https://github.com/destefanis/gatsby-portfolio" onMouseEnter={linkEnter} onMouseLeave={linkLeave}>Daniel Destefanis</a>.
+          © 2023️ Yudai Suzuki
           </div>
           <div className={styles.socialLinks}>
             <a href="https://twitter.com/ysgraph" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
