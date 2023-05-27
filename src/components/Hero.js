@@ -27,7 +27,7 @@ function Hero(props) {
                     initial={{ opacity: 0, y: 150 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ type: 'spring', delay: 0.4, damping: 15 }}>
-                    Digital Product Designer
+                    Digital Product Designer - UI, Web, Graphic
               </motion.p>
             </ClientOnly>
           </div>

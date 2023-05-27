@@ -265,18 +265,18 @@ const DiscordGrowth = () => {
             </figure>
 
             <div className="body">
-              <h2 className="h2">Establishing a new visual baseline</h2>
-              <p className="paragraph">
-                User testing taught us that our current buttons and inputs
-                didn’t seem interactable. Our app’s splash page didn’t tell
-                users anything about the product, and steps of registration
-                looked inconsistent from being updated piece by piece.
+            <p className="paragraph--small">
+                記念日というオブジェクトのプロパティとして<br />
+                ・お相手<br />
+                ・記念日の種類<br />
+                ・日付<br />
+                などの項目を設定しています。
               </p>
-              <p className="paragraph">
-                I started design by updating the visual design of the steps we
-                knew we needed for registration and login. That way we could
-                build from a baseline we knew was working and our future
-                iterations would be consistent.
+              <p className="paragraph--small">
+                ユーザーにとって最も重要である「記念日」というオブジェクトと、記念日の次に重要である「お相手」の関係を明確に示すため、「お相手」の編集は、記念日の設定内から行うよう設計しています。
+              </p>
+              <p className="paragraph--small">
+              また、編集・削除は「記念日」というオブジェクトに対して行えるようにすることで、オブジェクト指向UIに則った直感的な導線を設計しています。
               </p>
             </div>
 
@@ -288,194 +288,171 @@ const DiscordGrowth = () => {
             </figure>
 
             <div className="body">
-              <h2 className="h2">Onboarding help</h2>
-              <p className="paragraph">
-                During user testing we heard common phrases like “What is a
-                channel?”, “Are voice channels like a phone call?”. Channels are
-                how users organize their server by topic, so a new user not
-                understanding one of the core primitives of the product was a
-                big contributor to why they felt confused.
+              <p className="paragraph--small">
+                この施策においては、柔軟に手法を検討し、プロダクトマネージャーと設計について直接擦り合わせ・提案を行いました。<br />
+                オブジェクト指向UIを実践するのは初めてでしたが、ステークホルダーと合意をとりながら、プロジェクトを主導することができたと考えています。
               </p>
-              <p className="paragraph">
-                Our solution was to improve the empty states of the most
-                commonly visited parts of the app along with tutorial messages
-                to introduce these concepts.
+            </div>
+            
+          </section>
+
+
+          <section className="project-main">
+            
+            <div className="body">
+              <h3 className="h3 project-about">
+                <p className="caption">
+                  PROJECT 2.
+                </p>
+                マイページのポイント表示リニューアル
+              </h3>
+              <p className="paragraph--small">
+              TANPにはポイント機能が存在しており、多くの事業課題の改善が見込める機能の1つでした。<br />
+              しかし、従来はただポイントを表示する役割のみであったため、ポイントの機能改善を行うこととなりました。
               </p>
-              <p className="paragraph">
-                We tested this approach with interactive prototypes and users
-                first. After seeing success with our user tests we released this
-                project as an experiment and shortly after to production in
-                early 2020.
+              <p className="paragraph--small">
+                私はこの施策において、主にUIのビジュアルデザインを担当しました。
+              </p>
+              <div className="detail second-detail">
+                <motion.div className="icon-wrapper">
+                  <img
+                    src={calendarIcon}
+                    alt="Calendar Icon"
+                    className="details-icon"
+                  />
+                </motion.div>
+                <motion.h3 className="details-label">
+                  iOS
+                </motion.h3>
+                <motion.div className="icon-wrapper">
+                  <img
+                    src={calendarIcon}
+                    alt="Calendar Icon"
+                    className="details-icon"
+                  />
+                </motion.div>
+                <motion.h3 className="details-label">
+                  2週間
+                </motion.h3>
+                <motion.div className="icon-wrapper">
+                  <img
+                    src={calendarIcon}
+                    alt="Calendar Icon"
+                    className="details-icon"
+                  />
+                </motion.div>
+                <motion.h3 className="details-label">
+                  UIのビジュアルデザイン
+                </motion.h3>
+              </div>
+            </div>
+
+            <div className="body">
+              <h2 className="h2">カード型UI</h2>
+              <p className="paragraph--small">
+                様々な実装上の制約があったものの、ランクに応じて背景色が変わるようにし、ランクが上がるごとに変化するデザインを楽しめるようにしました。
+              </p>
+              <p className="paragraph--small">
+                次のランクまでの進捗状況はシンプルな棒グラフで表現し、あとどのくらいでランクアップするのかを一目で確認することができます。
               </p>
             </div>
 
             <figure className="project-image project-image--full">
               <img
-                alt="Three phones displaying Discords server template screens"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/5-discord-growth.png"
+                alt="Discords registration screen before and after"
+                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/3-discord-growth.png"
               />
             </figure>
 
             <div className="body">
-              <h2 className="h2">Server templates</h2>
-              <p className="paragraph">
-                San Chung and I co-designed this project into production across
-                Desktop, Android, and iOS. Discord Servers are hard to
-                understand for new users. They’re a primitive that can be used
-                for communities of 800k people, an private book club for 10 of
-                your fellow hobbyists, or for a classroom of 100.
+              <h2 className="h2">ランクバッジ</h2>
+              <p className="paragraph--small">
+                この施策に伴い、6種のランクバッジをデザインしました。
               </p>
-              <p className="paragraph">
-                By providing a list of templates to build from, we could teach
-                users what Discord could be used for and guide them through the
-                process resulting in a less confusing user experience.
-              </p>
-              <p className="paragraph">
-                Server templates were designed around our most common uses cases
-                “a place for friends”, “study group”, “an art community”. This
-                screen did double duty of education about the product and
-                helping them onboard.
+              <p className="paragraph--small">
+              金・銀・銅のメダルカラーを軸に、ランクが上がるごとに特別感を感じられるようを調整しています。<br />
+              ダイヤモンドバッジは多面体のため、光源を考慮した色を採用することで、自然な立体感を出しています。
               </p>
             </div>
 
             <figure className="project-image project-image--full">
               <img
-                alt="Illustrations by Kevin Dam at Discord"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/00-discord-growth-illustrations.png"
-              />
-            </figure>
-            <figure className="project-image project-image--full">
-              <img
-                alt="All of our prototypes in Figma we used for testing at Discord"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/7-discord-growth.png"
+                alt="Three phones displaying Discords tutorial halfsheets in iOS"
+                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/4-discord-growth.png"
               />
             </figure>
 
             <div className="body">
-              <h2 className="h2">Phone Registration</h2>
-              <p className="paragraph">
-                Next we built phone registration to make signing up for Discord
-                easier. This feature had two benefits, less friction to register
-                and it allowed us to work on social graph features as our next
-                project.
+              <p className="paragraph--small">
+                この施策においては、セマンティックカラーのルールに則り、カラーを指定しています。<br />
+                systemGroupedBackground などの階層概念や、ラベルの指定などを考慮して設計しています。<br />
+                今後、アクセシビリティラベル等を含めた、適切なiOS設計を理解・実践していきたいと考えています。
               </p>
-              <p className="paragraph">
-                This project spanned across all three platforms we
-                support(Desktop, Android and iOS). Phone registration is a good
-                example of a project that seems simple in practice, but requires
-                a considerable amount of design for all of it’s various states
-                (update, remove, add phone number etc).
+              <p className="paragraph--small">
+                また、一連のポイント関連施策の第一歩として、重要な既存機能の改善を行うことで、ポイントの有用性を高め、先のキャンペーン施策等にも有効な改善を行うことができました。
               </p>
             </div>
+          </section>
 
-            <figure className="project-image project-image--full">
-              <img
-                alt="Three phones displaying the screens for registering with a phone on discord"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/8-discord-growth.png"
-              />
-            </figure>
-
-            <figure className="project-image project-image--full">
-              <img
-                alt="Desktop version of Discord showing UI for entering a 6 digit number for password reset"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/9-discord-growth.png"
-              />
-            </figure>
-
-            <figure className="project-image project-image--full">
-              <img
-                alt="Three phones displaying the flow of clearing a phone number on a users account"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/10-discord-growth.png"
-              />
-            </figure>
-
+          <section className="project-main">
+            
             <div className="body">
-              <h2 className="h2">Finding your friends</h2>
-              <p className="paragraph">
-                To make finding people you know on Discord easier, we built
-                “Find Your Friends” which let users upload their contacts to
-                find existing Discord users.
+              <h3 className="h3 project-about">
+                <p className="caption">
+                  PROJECT 3.
+                </p>
+                サービスページのリニューアル
+              </h3>
+              <p className="paragraph--small">
+                TANPのリブランディングに伴ったサービスページのリニューアルを担当しました。
               </p>
-              <p className="paragraph">
-                One of the challenge of this project was staying privacy
-                focused. We let users decide whether or not other people could
-                find them. We had to balance this messaging and make it simple
-                to dig further into your privacy preferences. We used user
-                research to help us message this feature since it’s uncommon
-                with other modern social media networks.
+              <p className="paragraph--small">
+                新しいブランドアイデンティティに合わせたトーン&マナーの設計や、ページ内クリエイティブの制作、イラストレーターのディレクション等を行っています。
               </p>
-              <p className="paragraph">
-                Another problem we had to solve was how to surface this feature
-                for new users vs existing users. We decided to promote the
-                feature before launch to help educated our existing users on how
-                it would work.
-                <em>Selina Her</em>, the designer I mentioned earlier worked
-                side by side on this feature. She owned how it would fit within
-                Discord's onboarding while I had started on how the feature a
-                few months prior for existing users.
-              </p>
+              <div className="detail second-detail">
+                <motion.div className="icon-wrapper">
+                  <img
+                    src={calendarIcon}
+                    alt="Calendar Icon"
+                    className="details-icon"
+                  />
+                </motion.div>
+                <motion.h3 className="details-label">
+                フロントエンドエンジニア<br />
+                デザイナー（自分）<br />
+                イラストレーター
+                </motion.h3>
+                <motion.div className="icon-wrapper">
+                  <img
+                    src={calendarIcon}
+                    alt="Calendar Icon"
+                    className="details-icon"
+                  />
+                </motion.div>
+                <motion.h3 className="details-label">
+                ビジュアルデザイン<br />
+                アートディレクション
+                </motion.h3>
+                <motion.div className="icon-wrapper">
+                  <img
+                    src={calendarIcon}
+                    alt="Calendar Icon"
+                    className="details-icon"
+                  />
+                </motion.div>
+                <motion.h3 className="details-label">
+                  3週間
+                </motion.h3>
+              </div>
             </div>
 
             <figure className="project-image project-image--full">
               <img
-                alt="Floating phone with the Find Your Friends feature of Discord displayed"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/11-discord-growth.png"
+                alt="Discords registration screen before and after"
+                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/3-discord-growth.png"
               />
             </figure>
 
-            <figure className="project-image project-image--full">
-              <img
-                alt="Three phones displaying the splash screens of Find Your Friends on Discord"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/12-discord-growth.png"
-              />
-            </figure>
-
-            <figure className="project-image project-image--full">
-              <img
-                alt="Three phones displaying various steps of the Find your Friends feature of Discord"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/13-discord-growth.png"
-              />
-            </figure>
-
-            <div className="body">
-              <h2 className="h2">Measuring and validating designs</h2>
-              <p className="paragraph">
-                All of these features were tested with various experiments. On
-                our growth team, forming a hypothesis, testing variations of a
-                design, and measuring it’s impact are critical to learning.
-              </p>
-              <p className="paragraph">
-                Quantitative feedback was used for us to measure the true impact
-                and success of these projects during experimentation and post
-                launch.
-              </p>
-            </div>
-
-            <figure className="project-image project-image--full">
-              <img
-                alt="Two phones displaying two variations of the Discord welcome splash screen on iOS"
-                src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/14-discord-growth.png"
-              />
-            </figure>
-
-            <div className="body">
-              <h2 className="h2">The Result</h2>
-              <p className="paragraph">
-                All of these features, except for designs showing variations we
-                tested, shipped in 2020 or early 2021.
-              </p>
-              <p className="paragraph">
-                To date, the Discord growth team has shipped dozens of features,
-                tested even more ideas using experimentation, and is continuing
-                to work on improving our product for our next 100+ million
-                users.
-              </p>
-              <p className="paragraph">
-                While there's still a considerable amount of work left to be
-                done, I'm proud of the work my team and I did for the features
-                showcased above.
-              </p>
-            </div>
           </section>
         </div>
 
